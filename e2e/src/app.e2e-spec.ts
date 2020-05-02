@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('test-angular-routing-testing app is running!');
+    expect(page.getTitleText()).toEqual('Testing Angular routing');
   });
 
   afterEach(async () => {

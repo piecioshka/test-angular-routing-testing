@@ -1,0 +1,19 @@
+<div class="card" *ngIf="post">
+  <img [src]="post.images[0]" class="card-img-top" alt="..." />
+  <div class="card-header">
+    <a [routerLink]="getPostUrl()">
+      <small>{{ post.createdTime | date }}</small>
+    </a>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">
+      {{ post.body }}
+    </p>
+    <a [routerLink]="getPostUrl()" class="btn btn-primary">Read more</a>
+  </div>
+  <div class="card-footer d-flex align-items-center">
+    <img [src]="post.author.avatarUrl" class="avatar rounded-circle" alt="" />
+    <p class="mb-0 ml-3">{{ post.author.name }}</p>
+  </div>
+</div>
