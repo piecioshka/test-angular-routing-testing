@@ -1,1 +1,7 @@
-<app-post *ngFor="let post of postList" [post]="post"></app-post>
+<div class="row">
+  <app-post
+    class="col-md-4 col-xs-12 mb-3"
+    *ngFor="let post of postList"
+    [post]="post"
+  ></app-post>
+</div>

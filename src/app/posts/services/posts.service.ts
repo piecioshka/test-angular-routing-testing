@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import DUMMY_POSTS from '../../../dummies/posts.dummy.json';
+import DUMMY_POSTS from 'src/dummies/posts.dummy.json';
 
 @Injectable({
   providedIn: 'root',
