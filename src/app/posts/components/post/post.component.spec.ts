@@ -12,7 +12,7 @@ import { Router, Routes } from '@angular/router';
 
 import { PostComponent } from './post.component';
 import { FakeComponent } from 'src/fakes/fake.component';
-import DUMMY_POSTS from 'src/dummies/posts.dummy.json';
+import FIXTURE_POSTS from 'src/fixtures/posts.fixture.json';
 
 const routes: Routes = [{ path: 'posts/:postId', component: FakeComponent }];
 
@@ -44,7 +44,7 @@ describe('PostComponent', () => {
 
   describe('with defined post model,', () => {
     beforeEach(() => {
-      component.post = DUMMY_POSTS[0];
+      component.post = FIXTURE_POSTS[0];
       fixture.detectChanges();
     });
 
@@ -57,16 +57,13 @@ describe('PostComponent', () => {
     });
 
     it('should have a link to po profile page', () => {
-      const url = fixture.debugElement
-        .query(By.css('.card-header a'))
+      const url = fixture.debugElement.query(By.css('.card-header a'))
         .nativeElement.href;
       expect(url).toMatch('/posts/');
     });
 
     it('should redirect to post profile page after click on date time link', fakeAsync(() => {
-      fixture.nativeElement
-        .querySelector('.card-header a')
-        .click();
+      fixture.nativeElement.querySelector('.card-header a').click();
       tick();
       expect(location.path()).toMatch('/posts/');
     }));
