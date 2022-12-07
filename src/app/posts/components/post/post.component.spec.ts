@@ -31,8 +31,8 @@ describe('PostComponent', () => {
   }));
 
   beforeEach(() => {
-    location = TestBed.get(Location);
-    router = TestBed.get(Router);
+    location = TestBed.inject(Location);
+    router = TestBed.inject(Router);
     fixture = TestBed.createComponent(PostComponent);
     component = fixture.componentInstance;
     router.initialNavigation();
