@@ -17,9 +17,4 @@
 
 ## License
 
-[The MIT License](http://piecioshka.mit-license.org) @ 2020
-
-[1]: https://github.com/piecioshka/test-angular-routing-testing/blob/master/src/app/posts/components/post/post.component.spec.ts#L51
-[2]: https://github.com/piecioshka/test-angular-routing-testing/blob/master/src/app/posts/components/post/post.component.spec.ts#L59
-[3]: https://github.com/piecioshka/test-angular-routing-testing/blob/master/src/app/posts/components/post/post.component.spec.ts#L66
-[4]: https://github.com/piecioshka/test-angular-routing-testing/blob/master/src/app/posts/components/post/post.component.spec.ts#L74
+[The MIT License](http://piecioshka.mit-license.org) @ 2026
